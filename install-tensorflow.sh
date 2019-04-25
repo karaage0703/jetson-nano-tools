@@ -19,6 +19,3 @@ sudo pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker grpcio si
 
 # Install TensorFlow
 sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
-
-# Install PIL
-sudo apt-get -y install pyhon3-pil
