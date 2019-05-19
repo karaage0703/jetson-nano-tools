@@ -10,10 +10,10 @@ GST_STR = 'nvarguscamerasrc \
 WINDOW_NAME = 'Camera Test'
 
 def main():
-    cap = cv2.VideoCapture(GST_STR, cv2.CAP_GSTREAMER)
+    cam = cv2.VideoCapture(GST_STR, cv2.CAP_GSTREAMER)
 
     while True:
-        ret, img = cap.read()
+        ret, img = cam.read()
         if ret != True:
             break
 
@@ -22,6 +22,10 @@ def main():
         key = cv2.waitKey(10)
         if key == 27: # ESC
             break
+
+    cam.release()
+    cv2.destroyAllWindows()
+
 
 if __name__ == "__main__":
     main()
