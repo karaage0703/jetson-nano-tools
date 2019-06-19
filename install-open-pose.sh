@@ -17,6 +17,10 @@ pip3 install pycocotools
 
 # Setup tf-pose-estimation
 cd && git clone https://github.com/ildoonet/tf-pose-estimation.git
+cd ~/tf-pose-estimation
+git remote add karaage0703 https://github.com/karaage0703/tf-pose-estimation
+git fetch karaage0703
+git checkout -b jetson_nano karaage0703/jetson_nano
 cd ~/tf-pose-estimation/models/graph/cmu
 bash download.sh
 cd ~/tf-pose-estimation/tf_pose/pafprocess
