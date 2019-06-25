@@ -10,6 +10,7 @@ sudo apt-get -y install llvm-7*
 echo 'export PATH="/usr/lib/llvm-7/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 sudo apt-get -y install python3-scipy
+sudo apt-get -y install python3-matplotlib
 
 pip3 install tqdm
 pip3 install slidingwindow
