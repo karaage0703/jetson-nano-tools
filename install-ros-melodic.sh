@@ -25,6 +25,7 @@ echo "[Making the catkin workspace and testing the catkin build]"
 sudo apt-get install -y cmake python-rosinstall python-catkin-tools
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
+source /opt/ros/melodic/setup.bash
 catkin init
 catkin build
 sh -c "echo \"source ~/catkin_ws/devel/setup.bash\" >> ~/.bashrc"
