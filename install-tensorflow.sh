@@ -15,9 +15,12 @@ sudo apt-get -y install python3-pip
 
 # Install required packages
 sudo apt-get -y install zlib1g-dev zip libjpeg8-dev libhdf5-dev
-sudo pip3 install -U numpy==1.18 grpcio absl-py py-cpuinfo psutil portpicker grpcio six mock requests gast h5py astor termcolor
+sudo pip3 install -U numpy==1.16.1 grpcio absl-py py-cpuinfo psutil portpicker grpcio six mock requests gast h5py astor termcolor
 sudo pip3 install -U cython
-#sudo pip3 install scipy==1.1.0
 
 # Install TensorFlow
 pip3 install --no-cache-dir --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.4 --user
+
+# Upgrade Numpy and scipy
+sudo pip3 install numpy==1.18
+sudo pip3 install scipy==1.1.0
