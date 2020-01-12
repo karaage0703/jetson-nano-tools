@@ -21,6 +21,6 @@ sudo pip3 install -U cython
 # Install TensorFlow
 pip3 install --no-cache-dir --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu==1.13.1+nv19.4 --user
 
-# Upgrade Numpy and scipy
+# Upgrade Numpy
 sudo pip3 install numpy==1.18
-sudo pip3 install scipy==1.1.0
+#sudo pip3 install scipy==1.1.0

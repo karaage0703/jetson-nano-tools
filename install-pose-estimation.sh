@@ -27,5 +27,7 @@ sudo apt-get -y install swig
 swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
 cd ~/tf-pose-estimation/
 
+sudo pip3 install scipy==1.1.0
+
 # Reference site
 # https://toramamma.blogspot.com/2019/04/jetson-nano-tensorflowopenpose.html
