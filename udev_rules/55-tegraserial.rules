@@ -1,0 +1,1 @@
+KERNEL=="ttyTHS*", MODE="0666"
