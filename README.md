@@ -1,6 +1,10 @@
 # jetson-nano-tools
 Jetson Nano useful tools (setup, examples)
 
+# Dependency
+< JetPack 4.2.2 
+
+[Image link](https://qiita.com/karaage0703/items/0583528f1f9c34911a31)
 
 # Usage
 At first, clone this repository on jetson nano.
