@@ -3,8 +3,8 @@
 import cv2
 
 GST_STR = 'nvarguscamerasrc \
-    ! video/x-raw(memory:NVMM), width=3280, height=2464, format=(string)NV12, framerate=(fraction)30/1 \
-    ! nvvidconv ! video/x-raw, width=(int)1920, height=(int)1080, format=(string)BGRx \
+    ! video/x-raw(memory:NVMM), width=1920, height=1080, format=(string)NV12, framerate=(fraction)30/1 \
+    ! nvvidconv ! video/x-raw, width=(int)640, height=(int)480, format=(string)BGRx \
     ! videoconvert \
     ! appsink'
 WINDOW_NAME = 'Camera Test'
