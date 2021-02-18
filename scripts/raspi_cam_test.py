@@ -6,7 +6,7 @@ GST_STR = 'nvarguscamerasrc \
     ! video/x-raw(memory:NVMM), width=1920, height=1080, format=(string)NV12, framerate=(fraction)30/1 \
     ! nvvidconv ! video/x-raw, width=(int)640, height=(int)480, format=(string)BGRx \
     ! videoconvert \
-    ! appsink'
+    ! appsink drop=true sync=false'
 WINDOW_NAME = 'Camera Test'
 
 def main():
