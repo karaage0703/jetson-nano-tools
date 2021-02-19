@@ -17,11 +17,7 @@ pip3 install slidingwindow
 pip3 install pycocotools
 
 # Setup tf-pose-estimation
-cd && git clone https://github.com/ildoonet/tf-pose-estimation.git
-cd ~/tf-pose-estimation
-git remote add karaage0703 https://github.com/karaage0703/tf-pose-estimation
-git fetch karaage0703
-git checkout -b jetson_nano karaage0703/jetson_nano
+cd && git clone -b jetson_nano https://github.com/karaage0703/tf-pose-estimation
 cd ~/tf-pose-estimation/tf_pose/pafprocess
 sudo apt-get -y install swig
 swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
