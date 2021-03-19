@@ -2,7 +2,9 @@
 Jetson Nano useful tools (setup, examples)
 
 # Dependency
-<= JetPack 4.2.2 
+- JetPack 4.2.2
+- JetPack 4.4
+- JetPack 4.5
 
 [Image link](https://qiita.com/karaage0703/items/0583528f1f9c34911a31)
 
@@ -20,7 +22,7 @@ Execute following commands:
 
 ```sh
 $ cd ~/jetson-nano-tools
-$ ./install-tensorflow.sh
+$ ./install-tensorflow-v45.sh
 ```
 
 ## Install pose estimation
@@ -28,7 +30,7 @@ Execute following commands after setup TensorFlow:
 
 ```sh
 $ cd ~/jetson-nano-tools
-$ ./install-pose-estimation.sh
+$ ./install-pose-estimation-v45.sh
 ```
 
 ## Install ROS melodic
